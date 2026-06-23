@@ -8,11 +8,9 @@ import com.exemplo.jpa.model.UsuarioDTO;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-/**
- *
- * @author gaigu
- */
+@Repository
 public interface UsuarioRepository extends JpaRepository<UsuarioDTO, Integer>{
     @Query
     Optional<UsuarioDTO> findByEmailAndPassword(String email, String senha);

@@ -5,11 +5,9 @@
 package com.exemplo.jpa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-/**
- *
- * @author gaigu
- */
+@Repository
 public interface EmprestimoRepository extends JpaRepository<EmprestimoRepository, Integer>{
     
 }

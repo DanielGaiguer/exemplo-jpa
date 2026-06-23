@@ -6,11 +6,9 @@ package com.exemplo.jpa.repository;
 
 import com.exemplo.jpa.model.LivroDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-/**
- *
- * @author gaigu
- */
+@Repository
 public interface LivroRepository extends JpaRepository<LivroDTO, Integer>{
     
 }
